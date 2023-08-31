@@ -4,13 +4,13 @@ import { navLinks } from "../constants";
 
 const Nav = () => {
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="padding-x py-2 absolute z-10 w-full bg-white">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
 
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden p-4 w-fit">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
